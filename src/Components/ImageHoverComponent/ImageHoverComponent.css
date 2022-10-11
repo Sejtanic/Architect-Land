@@ -1,0 +1,65 @@
+.image-hover-component {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 100px;
+}
+.image-section-label {
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 5px;
+  border-bottom: 1px solid black;
+}
+.image-section-description {
+  font-size: 15px;
+  font-weight: lighter;
+  width: 60%;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.image-hover-component-style {
+  height: 80vh;
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.image-hover-component-section {
+  height: 100%;
+  width: 10%;
+  transition: all 1s;
+  scale: 0.7;
+}
+.rescale {
+  animation: scalereal 0.5s ease-in-out forwards;
+}
+.image-hover-component-section img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.full-show {
+  height: 100%;
+  width: 100%;
+}
+@keyframes scalereal {
+  100% {
+    scale: 1;
+  }
+}
+@media (max-width: 600px) {
+  .image-hover-component-section img {
+    object-fit: cover;
+  }
+  .image-hover-component {
+    height: 50vh;
+  }
+  .image-hover-component-style {
+    height: 40vh;
+  }
+}

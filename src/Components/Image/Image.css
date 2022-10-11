@@ -1,0 +1,35 @@
+.image {
+  position: absolute;
+  object-fit: cover;
+  scale: 0.95;
+  transition: all 0.4s ease-in-out;
+}
+.image:hover {
+  z-index: 2;
+}
+.middle {
+  transform: translate(-50%, -50%);
+}
+.bounce {
+  scale: 1;
+}
+@keyframes bounce {
+  0% {
+    scale: 1;
+  }
+  10% {
+    scale: 1.2;
+  }
+  20% {
+    scale: 0.8;
+  }
+  25% {
+    scale: 1.1;
+  }
+  30% {
+    scale: 0.9;
+  }
+  100% {
+    scale: 1;
+  }
+}
